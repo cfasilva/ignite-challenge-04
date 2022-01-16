@@ -10,7 +10,7 @@ interface IFood {
   description: string;
   price: number;
   available: boolean;
-  image_url: string;
+  image: string;
 }
 
 interface IProps {
@@ -41,7 +41,7 @@ export default function Food({
   return (
     <Container available={isAvailable}>
       <header>
-        <img src={food.image_url} alt={food.name} />
+        <img src={food.image} alt={food.name} />
       </header>
       <section className="body">
         <h2>{food.name}</h2>
