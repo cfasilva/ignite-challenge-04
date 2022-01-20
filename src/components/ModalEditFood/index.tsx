@@ -18,7 +18,7 @@ type Food = {
 type EditFood = {
   name: string;
   description: string;
-  price: string;
+  price: number;
   image: string;
 }
 
